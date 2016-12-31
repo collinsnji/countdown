@@ -8,17 +8,19 @@ setInterval(() => {
     };
     var current_time;
     var offset = {
-      offsethHour = 24,
-      offsetMinute = 60
+      offsetHour : 23,
+      offsetMinute : 59
      };
     var clock_wrapper = document.getElementById('clock-wrapper');
-
-    if (time.hour < 10) time.hour = "0"+time.hour;
-    if (time.minute < 10) time.minute = "0"+time.minute;
-    if (time.second < 10) time.second = "0"+time.second;
-     current_time = (offset.offsetHour - time.hour) + ":" 
-                  + (offset.offsetMinute - time.minute) + ":" 
-                  + (offset.offsetMinute - time.second);
-
+    
+    var x = offset.offsetHour - time.hour;
+    var y = offset.offsetMinute - time.minute;
+    var z = offset.offsetMinute - time.second;
+    
+    if (x < 10 ) x = "0"+x;
+    if (y < 10 ) y = "0"+y;
+    if (z < 10) z = "0"+z;
+     current_time = x + ":" + y + ":" + z;
+    
     clock_wrapper.innerHTML = current_time;
  }, 500);
