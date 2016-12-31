@@ -8,8 +8,8 @@ setInterval(() => {
     };
     var current_time;
     var offset = {
-      offsethHour = 24,
-      offsetMinute = 60
+      offsethHour : 24,
+      offsetMinute : 60
      };
     var clock_wrapper = document.getElementById('clock-wrapper');
 
