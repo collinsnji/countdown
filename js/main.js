@@ -19,6 +19,10 @@ setInterval(() => {
      current_time = (offset.offsetHour - time.hour) + ":" 
                   + (offset.offsetMinute - time.minute) + ":" 
                   + (offset.offsetMinute - time.second);
-
+    
+    if (time.hour < 10) time.hour = "0"+time.hour;
+    if (time.minute < 10) time.minute = "0"+time.minute;
+    if (time.second < 10) time.second = "0"+time.second;
+    
     clock_wrapper.innerHTML = current_time;
  }, 500);
