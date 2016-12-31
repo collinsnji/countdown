@@ -7,6 +7,9 @@ body {
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center center; 
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
   color: #1b1a1a;
 }
 
