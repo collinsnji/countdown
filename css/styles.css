@@ -3,7 +3,10 @@
 * { box-sizing: border-box; }
 
 body {
-  background-color: #efefef;
+  background-image: url(https://cdn.techjuice.pk/wp-content/uploads/2016/07/12.png);
+  background-size: cover;                      /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center; 
   color: #1b1a1a;
 }
 
@@ -14,20 +17,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2em;
-  font-family: 'Roboto', sans-serif;
-  color: #909090;
-}
 #clock-wrapper{
   font-family: 'Roboto', 'monospace', 'Segoe UI', sans-serif;
   font-weight: 300;
   font-size: 6em;
-  color: #0f9fe6;
+  color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
