@@ -51,18 +51,25 @@ body {
   margin-left: auto;
 }
 .main {
-  flex-direction: row-reverse;
-  position: relative;
-  padding: 8px;
-  margin: 0px 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 50px 0px;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  color: #909090;
   transition: all 800ms cubic-bezier(.4, 0, .2, 1);
 }
 #clock-wrapper{
   font-family: 'Roboto', 'monospace', 'Segoe UI', sans-serif;
-  font-weight: 100;
-  font-size: 4em;
+  font-weight: 300;
+  font-size: 6em;
   color: #0f9fe6;
-  padding: 5% 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   z-index: 4;
 }
