@@ -3,7 +3,6 @@
 * { box-sizing: border-box; }
 
 body {
-  font-family: 'Roboto', 'Ubuntu', 'Segoe UI', sans-serif;
   background-color: #efefef;
   color: #1b1a1a;
 }
@@ -14,18 +13,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0px 3px 6px rgba(0,0,0,0.14), 0px 0px 6px rgba(0,0,0,0.14);
 }
 .main {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 50px 0px;
   font-size: 2em;
   font-family: 'Roboto', sans-serif;
   color: #909090;
-  transition: all 800ms cubic-bezier(.4, 0, .2, 1);
 }
 #clock-wrapper{
   font-family: 'Roboto', 'monospace', 'Segoe UI', sans-serif;
