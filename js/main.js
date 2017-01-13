@@ -21,6 +21,5 @@ setInterval(() => {
     if (y < 10 ) y = "0"+y;
     if (z < 10) z = "0"+z;
      current_time = x + ":" + y + ":" + z;
-  
     clock_wrapper.innerHTML = current_time;
  }, 500);
