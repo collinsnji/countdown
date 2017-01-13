@@ -13,6 +13,7 @@ setInterval(() => {
      };
     var clock_wrapper = document.getElementById('clock-wrapper');
     
+	// calculate time offsets
     var x = offset.offsetHour - time.hour;
     var y = offset.offsetMinute - time.minute;
     var z = offset.offsetMinute - time.second;
